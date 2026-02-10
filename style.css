@@ -1,0 +1,197 @@
+:root{
+    --branco:#fff;
+    --rosa: #fe8685;
+    --verde-claro:#79dcc8;
+    --azul:#029cda;
+    --amarelo:#fec504;
+    --roxo:#6d2885;
+    --pink:#fd0f81;
+    --textos: "Montserrat", sans-serif;
+    --titulos:"Pacifico", 'cursive';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#sobre-nos h2 span{
+    font-family: var(--textos);
+}
+
+.container{
+    margin-top: 2%;
+    padding-top: 10px;
+    overflow-x: hidden;
+    background-color: var(--branco);
+    font-family: var(--textos);
+}
+.div{
+    background-color: black;
+}
+
+.navbar-toggler{
+    background-color:var(--branco)
+}
+
+header img{
+    width: 8%;
+}
+
+#produtos .row{
+    overflow-y: hidden;
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #272727;
+}
+
+.informacoes-uteis li a:hover{
+    background-color: #393737;
+}
+
+.informacoes-uteis li a,
+.categorias li a,
+.social-links i{
+    font-family: var(--textos);
+}
+
+.social-links{
+    list-style: none;
+}
+
+.categorias li:first-child{
+    background-color: var(--pink);
+}
+
+.categorias .nav-pills .nav-link:first-child.active{
+    background-color: var(--pink);
+    font-weight: bold;
+}
+
+.categorias li:nth-child(2){
+    background-color: var(--azul);
+}
+
+.categorias li:nth-child(3){
+    background-color: var(--roxo);
+}
+
+#cabecalho .social-links i,
+.categorias .nav-item .nav-link:hover,
+.categorias .nav-item .nav-link,
+.categorias .nav-pills .nav-item .nav-link.active,
+.categorias .nav-pills .nav-link.active,
+#produtos .nav .nav-link.active,
+#menu li a,
+#menu li a:hover,
+#menu .nav-pills .nav-link.active{
+    color: #fff;
+}
+
+nav ul li:nth-child(3){
+    display: none;
+}
+
+.title{
+    font-family: var(--titulos);
+}
+
+.text-colored,
+#categorias .nav .nav-link,
+#produtos .nav .nav-link{
+    color: var(--roxo);
+}
+
+
+#produtos .nav .nav-link.active,
+#produtos .nav .nav-link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#produtos .nav .nav-link.active{
+    background-color: #9f81a8;
+    border-radius: 5px;
+}
+
+.tamanhos-lista li{
+    list-style: none;
+    background-color: var(--branco);
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 1px #272727 solid; 
+}
+
+.tamanhos-lista li a{
+    color: #272727;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.tamanhos-lista li a:hover{
+    color: var(--rosa);
+}
+
+footer{
+    background-color: var(--rosa);
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+}
+
+.navbar .logo{
+    display: none;
+}
+
+#perguntas-frequentes{
+    padding: 0 8%;
+}
+/* 
+.accordion-button:not(.collapsed)
+{
+    background-color: #79dcc852;
+} */
+@media (max-width:768px){
+    header div:nth-child(2){
+        display: flex;
+        justify-content: center;
+    }
+
+    #cabecalho .logo{
+        display: none;
+    }
+
+}
+
+@media (max-width:576px){
+    body{
+        padding: 5px;
+    }
+
+    #cabecalho .logo{
+        display: block;
+    }
+
+    header div:first-child,
+    header div:nth-child(2),
+    #sobre-nos img{
+        display: none;
+    }
+
+    nav ul li:nth-child(3),
+    .navbar .logo{
+        display: block;
+    }
+
+    .div{
+        background-color: #fff;
+    }
+
+    #menu li a{
+        color: #000;
+    }
+}

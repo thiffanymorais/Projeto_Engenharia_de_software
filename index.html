@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Moda Infantil</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="cabecalho" class="sticky-md-top"> 
+        <div class="px-5 py-4 d-md-flex  justify-content-md-between bg-white">
+            <img class="logo" src="./img/logo.jpg" alt="Logo elymodas kids">
+            <div class="d-flex align-items-center categorias" >
+                <ul class="nav nav-pills">
+                    <li class="nav-item rounded px-3 fw-bold">
+                        <a href="#meninas" class="nav-link">Meninas</a>
+                    </li>
+
+                    <li class="nav-item rounded px-3 mx-sm-4 fw-bold">
+                        <a href="#meninos" class="nav-link">Meninos</a>
+                    </li>
+
+                    <li class="nav-item rounded px-3 fw-bold text-white active">
+                        <a href="#produtos" class="nav-link">Categorias</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="position-relative me-3">
+    <button class="btn btn-outline-dark" onclick="abrirCarrinho()">
+        <i class="bi bi-cart3"></i>
+        <span id="contadorCarrinho"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+        </span>
+    </button>
+</div>
+
+        </div>    
+        <div class=" navbar navbar-expand-sm d-flex d-flex justify-content-between informacoes-uteis div">
+            <img class="logo" src="./img/logo.jpg" alt="Logo ELY MODAS kids">
+            <button type="button" class="navbar-toggler mb-2" data-bs-toggle="collapse"  data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav nav nav-pills">
+                    <li class="nav-item">
+                        <a class="mx-md-2 nav-link" href="#sobre-nos">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="mx-md-2 nav-link active" href="#pronta-entrega">
+                            <i class="bi bi-heart"></i>
+                            Pronta Entrega</a>
+                        </li>   
+                    <li class="nav-item">
+                        <a class="mx-md-2 nav-link" href="#produtos">
+                            <i class="bi bi-bag-heart"></i>
+                            Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="mx-md-2 nav-link" href="#perguntas-frequentes">
+                            <i class="bi bi-question-square"></i>
+                            Perguntas Frequentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="mx-md-2 nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section class="carousel">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"  data-bs-interval="3000" src="./img/carousel/little-girl-2516582_1920-min.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" data-bs-interval="3000" src="./img/carousel/photographer-920128_1920-min.jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" >
+                    <span class="carousel-control-prev-icon" ></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" ></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            </div>
+        </section>
+
+        <div class="div text-white text-center fw-bold dark" style="background-color: black;">
+            <p class="py-2">Verifique o tamanho disponível para encomenda em nosso whatsapp
+                <a href="https://wa.me/message/WPZCL6NMVOKFI1"><i class="bi bi-whatsapp text-white pl-2"></i></a>
+            </p>
+        </div>
+
+        <section id="sobre-nos" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <img class="img-fluid logo" src="./img/logo.jpg" alt="Logo ELY MODAS kids">
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="row">
+                            <h2 class="title text-center">Bem-vindo à <span class="text-colored">ELY MODAS INFANTIL!</span></h2>
+                        </div>
+                        <div class="row">
+                             <p>A <strong>ELY MODAS INFANTIL</strong> é especializada em moda infantil, oferecendo uma enorme variedade de cores e modelos — uma mais linda que a outra. Trabalhamos com peças modernas, confortáveis e de ótima qualidade para acompanhar as crianças em todos os momentos.</p>
+                             <p>Atendemos do <strong>tamanho 4 ao 16</strong>, com opções para o dia a dia e ocasiões especiais, sempre prezando por estilo, durabilidade e bom acabamento.</p>
+                             <p class="fw-bold">Atacado e varejo • Atendimento personalizado • Envio para todo o Brasil</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pronta-entrega" class="py-4 ">
+            <div class="row">
+                <h2 class="title text-center">Pronta <span class="text-colored">Entrega</span></h2>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-3">
+                        <div class="card mb-5">
+                            <div class="card-header d-flex justify-content-md-between flex-column">
+                                <h5 class="card-title m-0">Conjunto Dino </h5>
+                                <p>Tamanhos disponíveis:</p>
+                                <ul class="nav tamanhos-lista ps-0">
+                                    <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                    <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                </ul>
+                                <em class="fw-bold pt-3">R$69,99</em>
+                            </div>
+                            <img class="img-fluid"  src="./img/produtos/conjunto-masculino.jpeg " alt="Conjunto Masculino Dinossauro">
+                            <div class="card-footer">
+                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success mt-3">Falar com a vendedora <i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-3">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-md-between flex-column">
+                                <h5 class="card-title m-0">Vestido de Flores</h5>
+                                <p>Tamanhos disponíveis:</p>
+                                <ul class="nav tamanhos-lista ps-0">
+                                    <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                    <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                </ul>
+                                <em class="fw-bold pt-3">R$54,99</em>
+                            </div>
+                            <img class="img-fluid" src="./img/produtos/vestido-flores-azul.jpeg" alt="Vestido de flores">
+                            <div class="card-footer">
+                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success mt-3">Falar com a vendedora <i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-3">
+                        <div class="card mb-5">
+                            <div class="card-header d-flex justify-content-md-between flex-column">
+                                <h5 class="card-title m-0">Conjunto Dino </h5>
+                                <p>Tamanhos disponíveis:</p>
+                                <ul class="nav tamanhos-lista ps-0">
+                                    <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                    <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                </ul>
+                                <em class="fw-bold pt-3">R$69,99</em>
+                            </div>
+                            <img class="img-fluid"  src="./img/produtos/conjunto-masculino.jpeg " alt="Conjunto Masculino Dinossauro">
+                            <div class="card-footer">
+                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success mt-3">Falar com a vendedora <i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-3">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-md-between flex-column">
+                                <h5 class="card-title m-0">Vestido de Flores</h5>
+                                <p>Tamanhos disponíveis:</p>
+                                <ul class="nav tamanhos-lista ps-0">
+                                    <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                    <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                </ul>
+                                <em class="fw-bold pt-3">R$54,99</em>
+                            </div>
+                            <img class="img-fluid" src="./img/produtos/vestido-flores-azul.jpeg" alt="Vestido de flores">
+                            <div class="card-footer">
+                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success mt-3">Falar com a vendedora <i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class=" title text-center pb-5">
+                        Nossas <span class="text-colored">Produtos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-3 col-lg-2">
+                        <nav class="nav flex-column ">
+                            <button class="nav-link active" type="button" data-bs-toggle="tab" data-bs-target="#bodys">Bodys</button>
+                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#vestidos">Vestidos</button>
+                            <button class="nav-link mb-3" type="button" data-bs-toggle="tab" data-bs-target="#conjunto-masculino">Conjuntos Masculinos</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-9 col-lg-10">
+                        <div class="tab-content">
+                            <!-- Sessão meninas  -->
+
+                            <div class="tab-pane active" id="bodys">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100 rounded" src="./img/produtos/body-manga-curta.jpg" alt="Body manga curta">
+                                        <div class="d-flex justify-content-md-between flex-column pb-md-5 pt-3">
+                                            <h5 class="fw-bold m-0">Body manga curta </h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 44,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100 rounded" src="./img/produtos/body-saia-tule-rosa.jpeg" alt="Body manga curta">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Body saia tule</h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">4</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 44,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/conjunto-body-short-concha.jpeg" alt="Body manga curta">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Body concha </h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 44,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/conjunto-body-short.jpeg" alt="Body manga curta">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Body com shot</h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 44,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="vestidos">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/vestido-flores-azul.jpeg" alt="Vestido de flores">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Vestido de flores </h5>
+                                            <p class="fs-6">(acompanha chapéu)</p>
+                                            <p>Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 54,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/vestido-soltinho-botoes-verde.jpeg" alt="Vestido de flores">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Vestido Soltinho </h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">4</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 54,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/vestido-tule-cereja-branco.jpeg" alt="Vestido de flores">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Vestido Cereja</h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">4</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 54,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/vestido-babadinho.jpeg" alt="Vestido de flores">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Vestido Babadinho</h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 54,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/vestido-floral-manga-longa-vermelho.jpeg" alt="Vestido de flores">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Vestido maga longa</h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 54,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Sessão meninos  -->
+
+                            <div class="tab-pane" id="conjunto-masculino">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/conjunto-masculino.jpeg" alt="Conjunto blusa e bermuda Dinossauro ">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Conj. Dinossauro </h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 69,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/conjunto-urso-verde-listrado.jpeg" alt="Conjunto blusa e bermuda Dinossauro ">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Conjunto  Listrado</h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">M</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">G</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 69,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded" src="./img/produtos/conjunto-blusa-short-masculino.jpeg" alt="Conjunto blusa e bermuda Dinossauro ">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Conj. Blusa e Short </h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 69,99</em>
+                                            <div class="fs-5">
+                                                <button class="btn btn-outline-primary my-3"
+                                                onclick="adicionarCarrinho('Conjunto Dino', 69.99)">Adicionar ao carrinho
+                                                </button>
+
+                                    
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block w-100  rounded"  src="./img/produtos/conjunto-smile-verde.jpeg" alt="Conjunto blusa e bermuda Dinossauro ">
+                                        <div class="d-flex justify-content-md-between flex-column pb-5 pt-3">
+                                            <h5 class="fw-bold m-0">Conjunto Smile </h5>
+                                            <p class="mt-1">Tamanhos disponíveis:</p>
+                                            <ul class="nav tamanhos-lista ps-0">
+                                                <li> <a class="nav-link py-1 px-2" href="#">GG</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">1</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">2</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">3</a></li>
+                                                <li> <a class="nav-link py-1 px-2" href="#">4</a></li>
+                                            </ul>
+                                            <em class="mt-3 fw-bold">R$ 69,99</em>
+                                            <div class="fs-5">
+                                                <a href="https://wa.me/message/WPZCL6NMVOKFI1" class="d-block btn btn-outline-success my-3">Falar com a vendedora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="perguntas-frequentes" class="py-4">
+
+            <div class="row">
+                <h2 class="title text-center">Perguntas <span class="text-colored">Frequentes</span></h2>
+            </div>
+
+            <div class="accordion" id="accordion">
+                <div class="accordion-item mt-5" id="accordion">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                            1 - Qual o prazo para entrega?
+                        </button>
+                    </h2>
+                    <div id="resposta1" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Nosso prazo para entrega dos produtos é de 10 a 15 dias a partir da confirmação do pagamento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                            2 - Vocês aceitam cartão?
+                        </button>
+                    </h2>
+                    <div id="resposta2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Sim, aceitamos cartões e dividimos em até 12x</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#resposta3">
+                            3 - Vou recebe meu produto na minha casa?
+                        </button>
+                    </h2>
+                    <div id="resposta3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Entregamos o seu produto na sua residência, consulte taxa de entrega.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class=" title text-center pb-5">
+                        Fale <span class="text-colored">Conosco</span>
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label" for="nome">Nome:</label>
+                                <input class="form-control" type="text" name="nome" id="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="email">E-mail:</label>
+                                <input class="form-control" type="email" name="email" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="telefone">Telefone:</label>
+                                <input class="form-control" type="tel" name="telefone" id="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="mensagem">Mensagem:</label>
+                                <textarea class="form-control"  name="mensagem" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <h3 class="title text-center">Redes <span class="text-colored">Sociais</span></h3>
+                        </div>
+                        <ul class="social-links d-flex m-0 p-0">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-facebook text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 mx-4">
+                                <a href="https://www.instagram.com/mm.kids.cn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                    <i class="bi bi-instagram text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="https://wa.me/message/WPZCL6NMVOKFI1">
+                                    <i class="bi bi-whatsapp text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored pt-5 text-center" >
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereços</h3>
+                            <p class="text-start">Loja online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="pt-2">  &copy; 2024 | Maria Eduarda Rezende</p>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>
+                        <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                        <i class="bi bi-exclamation-triangle-fill text-danger"></i> ATENÇÃO!!
+                        <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                        <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                    </h5>
+                    <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Os valores são meramente ilustrativos pois o site ainda está em desenvolvimento.</p>
+                    <strong>Caso tenha interesse em alguma peça entre em contato pelo whatsapp.</strong>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" type="button" class="btn btn-success">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+
+    <div class="modal fade" id="modalCarrinho" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          <i class="bi bi-cart3"></i> Seu Carrinho
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul id="listaCarrinho" class="list-group mb-3"></ul>
+
+        <h5 class="text-end">
+          Total: <strong>R$ <span id="totalCarrinho">0.00</span></strong>
+        </h5>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+        <button class="btn btn-success" onclick="finalizarCompra()">Finalizar compra</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/messages_pt_BR.min.js"></script>
+
+<script src="lib/bootstrap.bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
