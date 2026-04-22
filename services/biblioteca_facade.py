@@ -21,6 +21,9 @@ class BibliotecaFacade:
     def obter_recomendacoes(self, usuario):
         return self.recomendacao_service.obter_recomendacoes(usuario)
 
+    def obter_novidades(self):
+        return self.recomendacao_service.obter_novidades()
+
     def obter_catalogo_completo(self):
         return self.recomendacao_service.obter_catalogo_completo()
 

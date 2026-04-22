@@ -66,8 +66,9 @@ class PainelAluno(tk.Toplevel):
 
     def abrir_acervo(self):
         recomendacoes = self.facade.obter_recomendacoes(self.usuario)
+        novidades = self.facade.obter_novidades()
         catalogo_completo = self.facade.obter_catalogo_completo()
-        CatalogoView(self, self.usuario, recomendacoes, catalogo_completo, self.facade)
+        CatalogoView(self, self.usuario, recomendacoes, novidades, catalogo_completo, self.facade)
 
     def mostrar_emprestimos_abertos(self):
         EmprestimosView(self, self.usuario, self.facade)
